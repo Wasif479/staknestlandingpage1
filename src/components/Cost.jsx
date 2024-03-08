@@ -16,10 +16,10 @@ import Image from 'next/image';
 export default function Cost() {
   return (
     <>
-    <div className='bg-[#cfebf3] min-h-screen flex flex-col justify-center items-center  -skew-y-6 mt-7'>
+    <div id='cost' className='bg-[#cfebf3] min-h-screen flex flex-col justify-center items-center  -skew-y-6 mt-7'>
         <div className='skew-y-6  flex flex-col justify-center items-center  '>
             <div className='flex justify-center items-center'>
-                <h1 className='font-regular font-bold text-xl md:text-3xl mt-4'>Clarity in Cost, Flexibility in Choice</h1>
+                <h1 className='font-regular font-bold text-xl md:text-3xl mt-9'>Clarity in Cost, Flexibility in Choice</h1>
             </div>
             <div className='md:flex mt-16 justify-center items-center hidden '>
                 <div className='bg-white flex flex-col justify-center items-center aspect-square rounded-l-md h-64'>
@@ -51,7 +51,7 @@ export default function Cost() {
     
             </div>
             {/* phone view */}
-            <div className='flex justify-center items-center min-h-screen md:hidden mt-5'>
+            <div className='flex justify-center items-center h-full md:hidden mt-5'>
                 <Carousel>
             <CarouselContent>
               <CarouselItem className="flex justify-center items-center">
@@ -93,8 +93,11 @@ export default function Cost() {
             </div>
             
 
-            <div className='flex justify-center items-center mt-9 mb-8'>
-        <button className='px-3 flex justify-center items-center py-2 border border-[#0577eb] text-[#0577eb] font-regular text-xs rounded-md'>Let's Talk<FaArrowRightLong className='ml-2' /></button>
+            <div className='flex justify-center items-center mt-5 mb-8'>
+              <a href="#Form">
+                 <button className='px-3 flex justify-center items-center py-2 border border-[#0577eb] text-[#0577eb] font-regular text-xs rounded-md'>Let&apos;s Talk<FaArrowRightLong className='ml-2' /></button>
+              </a>
+       
        </div>
                        
         </div>

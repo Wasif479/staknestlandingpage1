@@ -20,10 +20,10 @@ const Slider = () => {
     return (
         <>
        
-        <div className="flex flex-col justify-center items-start h-full md:h-screen  bg-[#cfebf3] -skew-y-6 mt-7">
+        <div id="Case" className="flex flex-col justify-center items-start h-full md:h-screen  bg-[#cfebf3] -skew-y-6 mt-7">
              <div className="mb-5 skew-y-6 ml-16  md:mt-10 ">
             <h1 className="font-regular text-3xl mt-16 font-bold leading-tight " >Together, We Forge the Path to <span className="text-[#0755eb]">Success</span></h1>
-            <p className="text-base mt-6 mb-10 font-regular ">12+ Years of Transforming Ideas into Reality: Let's Tackle Your Development Hurdles Now!</p>
+            <p className="text-base mt-6 mb-10 font-regular ">12+ Years of Transforming Ideas into Reality: Let&apos;s Tackle Your Development Hurdles Now!</p>
              </div>
         
                  <div className="flex flex-col justify-center items-center text-center skew-y-6 ml-8 mb-6 md:mb-1">
@@ -42,7 +42,10 @@ const Slider = () => {
         <div className=" skew-y-6 flex text-[#0577eb] font-regular  justify-center items-center flex-col w-full">
                       <p>Want to know more about our work ?</p>
                       <div className='flex justify-center items-center mt-9 mb-8'>
-        <button className='px-3 flex justify-center items-center py-2 border border-[#0577eb] text-[#0577eb] font-regular text-xs rounded-md'>Let's Talk<FaArrowRightLong className='ml-2' /></button>
+                        <a href="#Candy">
+                          <button className='px-3 flex justify-center items-center py-2 border border-[#0577eb] text-[#0577eb] font-regular text-xs rounded-md'>Let&apos;s Talk<FaArrowRightLong className='ml-2' /></button>
+                        </a>
+        
        </div>
                     </div>     
         </div>

@@ -16,17 +16,23 @@ import Slider from "@/components/Slider";
 
 import Started from "@/components/Started";
 import Tailored from "@/components/Tailored";
+import { useTawkTo } from "./hooks/useTawkTo";
+import CalendlyWidget from "@/components/CalendlyWidget";
+import Navbar from "@/components/Navbar";
+import Candy from "@/components/Candy";
 
 
 export default function Home() {
+  useTawkTo('65c1da818d261e1b5f5cc8a1'); // Replace 'YOUR_TAWKTO_KEY_HERE' with your actual Tawk.to key
   return (
     <>
+    <Navbar/>
     <HeroSection/>
     <EndRoll/>
     <Started/>
     <Cost/>
     <Jensen/>
-    <Form/>
+    <CalendlyWidget/>
     <Tailored/>
     <GridFlow/>
      <Slider/>
@@ -35,7 +41,8 @@ export default function Home() {
    
    
     {/* <Kali/> */}
-    <LForm/>
+    {/* <LForm/> */}
+    <Candy/>
      
     
    

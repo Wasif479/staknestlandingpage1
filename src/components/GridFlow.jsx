@@ -6,8 +6,8 @@ import React from 'react'
 export default function GridFlow() {
   return (
     <section className='mt-28'>
-        <div className=' w-2/3'>
-            <div className=' flex items-start ml-16 justify-center flex-col'>
+        <div className=' lg:w-2/3 mr-10 flex justify-center items-center text-center '>
+            <div className=' flex lg:items-start items-center ml-16 justify-center flex-col'>
             <h1 className='lg:text-3xl md:text-3xl text-3xl sm:text-3xl text-black font-bold font-regular'>Why Choose <span className='text-[#0755e9]'>StakNest</span> for Developers?</h1>     
             <p className='text-base font-regular  mt-6 mb-8'>Boost Growth with Our Expert Developers</p>
             </div>
@@ -34,7 +34,7 @@ export default function GridFlow() {
                </div>
                <div className='border border-[#0577eb] h-44 w-72 rounded-md flex items-center flex-col '>
                   <h1 className='mt-10 text-[#0577eb] text-xs font-bold w-2/3'>Flexible Hiring Models </h1>
-                  <p className='w-2/3 text-black mt-5 text-xs font-regular '>Choose the engagement model that suits your project's needs.</p>
+                  <p className='w-2/3 text-black mt-5 text-xs font-regular '>Choose the engagement model that suits your project&apos;s needs.</p>
                </div>
             </div>
              <div className='relative p-4 '>
@@ -44,10 +44,10 @@ export default function GridFlow() {
                </div>
                <div className='border border-[#0577eb] h-44 w-72 rounded-md flex items-center flex-col '>
                   <h1 className='mt-10 text-[#0577eb] text-xs font-bold w-2/3'>Own Your Code 100%</h1>
-                  <p className='w-4/5 text-black mt-5 text-xs font-regular '>We ensure you're the sole owner of
-your project's intellectual property
+                  <p className='w-4/5 text-black mt-5 text-xs font-regular '>We ensure you&apos;re the sole owner of
+your project&apos;s intellectual property
 with complete ownership of your
-project's source code.
+project&apos;s source code.
 </p>
                </div>
             </div>
@@ -139,7 +139,10 @@ services at competitive rates</p>
 
         {/* Button */}
        <div className='flex justify-center items-center mt-9 mb-8'>
-        <button className='px-3 flex justify-center items-center py-2 border border-[#0577eb] text-[#0577eb] font-regular text-xs rounded-md'>Let's Talk<FaArrowRightLong className='ml-2' /></button>
+         <a href='#Candy'>
+            <button className='px-3 flex justify-center items-center py-2 border border-[#0577eb] text-[#0577eb] font-regular text-xs rounded-md'>Let&apos;s Talk<FaArrowRightLong className='ml-2' /></button> 
+         </a>
+       
        </div>
 
         

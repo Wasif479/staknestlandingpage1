@@ -3,7 +3,8 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { Button } from './ui/button'
 import { FaPhoneAlt } from "react-icons/fa";
-import Link from 'next/link';
+
+
 
 
 import {
@@ -14,6 +15,8 @@ import {
     SheetTitle,
     SheetTrigger,
   } from "@/components/ui/sheet"
+import { Link } from 'react-scroll';
+
 
 
 
@@ -33,15 +36,40 @@ export default function Navbar() {
             <div className=' flex items-center'>
                 {/* middle part */}
                 <ul className=' flex items-center justify-center mb-2'>
-                   <li className='font-regular text-sm font-normal mr-3'>How it Works</li>
-                   <li className='font-regular text-sm font-normal mr-3'>Case Studies</li>
-                   <li className='font-regular text-sm font-normal mr-3'>FAQs</li>
-                   <li className='font-regular text-sm font-normal mr-3'>Apply as Talent</li>
-                   <li className='font-regular text-sm font-normal mr-3 flex justify-center items-center '><span className='text-blue-700 mr-1'><FaPhoneAlt /></span>+1-512-897-7189</li>
+                   <a href='#started'>
+                    <Link to='started' smooth={true} offset={200} duration={500}>
+                     <li className='font-regular text-sm font-normal mr-3 cursor-pointer'>How it Works</li>
+                    </Link>
+                   </a>
+
+                   
+                  <a href='#Case'>
+                    <Link to='Case' smooth={true} offset={200} duration={500}>
+                     <li className='font-regular text-sm font-normal mr-3'>Case Studies</li>
+                    </Link>
+                  </a>
+                  <a href='#Question'>
+                    <Link to='Question' smooth={true} offset={200} duration={500}>
+                     <li className='font-regular text-sm font-normal mr-3'>FAQs</li>
+                    </Link>
+                  </a>
+                   <a href='#cost'>
+                    <Link to='cost' smooth={true} offset={200} duration={500}>
+                     <li className='font-regular text-sm font-normal mr-3'>Pricing</li>
+                    </Link>
+                   </a>
+                  <a href="tel:+1-512-897-7189">
+                    <li className='font-regular text-sm font-normal mr-3 flex justify-center items-center '><span className='text-blue-700 mr-1'><FaPhoneAlt /></span>+1-512-897-7189</li>
+                  </a>
                 </ul>
                 <div className='ml-2'>
               {/* burron for hire now */}
-              <button className='text-sm mb-2 font-normal mr-2 py-2 px-6 bg-[#0755eb] rounded-sm text-white'>Hire Now</button>
+              <a href='#Candy'>
+                <Link to='Candy' smooth={true} offset={200} duration={500}>
+                  <button className='text-sm mb-2 font-normal mr-2 py-2 px-6 bg-[#0755eb] rounded-sm text-white'>Hire Now</button>
+                </Link>
+              </a>
+             
             </div>
             </div>
             
@@ -73,25 +101,48 @@ export default function Navbar() {
              </SheetTrigger>
              <SheetContent  className="w-[300px] " side="right">
                <SheetHeader>
-                 <SheetTitle>Navigation Pannel</SheetTitle>
+                 <SheetTitle></SheetTitle>
                 
                </SheetHeader>
                <ul className=' mt flex flex-col py-3'>
-                <li className=' ml-3 mt-3'>
-                    Services
+               {/* <li className=' ml-3 mt-3'>
+                <a href='#services'>
+                 Services 
+                </a>
+                
+                </li> */}
+                <a href='#started'>
+                <Link to='started' smooth={true} offset={200} duration={500}>
+                  <li className=' ml-3 mt-3'>
+                How it Works
                 </li>
-                <li className=' ml-3 mt-3'>
-                    How it Works
+                </Link>
+                </a>
+                <a href='#Case'>
+                <Link to='Case' smooth={true} offset={200} duration={500}>
+                   <li className=' ml-3 mt-3'>
+                Case Studies
                 </li>
-                <li className=' ml-3 mt-3'>
-                    Case Studies
+                </Link>
+                </a>
+               
+                <a href='#cost'>
+                  
+                  <li className=' ml-3 mt-3'>
+                 Pricing
                 </li>
-                <li className=' ml-3 mt-3'>
-                    Apply as Talent
+                </a>
+                
+                <a href='#Question'>
+                  <li className=' ml-3 mt-3'>
+                   FAQ&apos;s
                 </li>
+                </a>
+                <a href="tel:+1-512-897-7189">
                 <li className=' ml-3 mt-3  flex items-center'>
                  <span className='text-blue-700 mr-1'><FaPhoneAlt /></span>+1-512-897-7189
                 </li>
+                </a>
                </ul>
              </SheetContent>
            </Sheet>

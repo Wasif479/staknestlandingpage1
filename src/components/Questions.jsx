@@ -10,13 +10,13 @@ import {
 
 export default function Questions() {
   return (
-    <div className='mt-6 mb-11 '>
+    <div id='Question' className='lg:mt-0 mt-32  mb-11 '>
         <div className='flex justify-center items-center flex-col'>
             <h1 className='lg:text-3xl md::text-3xl text-2xl font-bold flex justify-center items-center font-regular'>Have Questions <span className='text-[#0755eb] ml-2'>?</span></h1>
-            <p className='flex justify-center items-center mt-10 mb-5'>We've got answers! </p>
+            <p className='flex justify-center items-center mt-10 mb-5'>We&apos;ve got answers! </p>
         </div>
-        <div className='mt-10 flex justify-center items-center'>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-28 '>
+        <div className='mt-5 flex justify-center items-center'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-10 '>
               <div className=''>
               <Accordion type="single" collapsible className='w-[380px] border-b border-blue-500'>
   <AccordionItem value="item-1" className="">
@@ -31,7 +31,7 @@ export default function Questions() {
               <div className=''>
               <Accordion type="single" collapsible className='w-[380px] border-b border-blue-500'>
   <AccordionItem value="item-1" className="">
-    <AccordionTrigger><IoMdAddCircleOutline  className='text-[#0577eb] text-xl font-bold mr-5'  /><span className='text-xs font-semibold'>How does StakNest protects my project's confidentiality</span> ?</AccordionTrigger>
+    <AccordionTrigger><IoMdAddCircleOutline  className='text-[#0577eb] text-xl font-bold mr-5'  /><span className='text-xs font-semibold'>How does StakNest protects my project&apos;s confidentiality</span> ?</AccordionTrigger>
     <AccordionContent>
     StakNest adheres to stringent security protocols to safeguard your data, with an option to reinforce this with a Non-Disclosure Agreement (NDA) for your peace of mind.
 
@@ -55,9 +55,9 @@ We usually use Slack , Skype and Google Meet for  communication including voice/
               <div className=''>
               <Accordion type="single" collapsible className='w-[380px] border-b border-blue-500'>
   <AccordionItem value="item-1" className="w-full">
-    <AccordionTrigger><IoMdAddCircleOutline  className='text-[#0577eb] text-xl font-bold mr-5'  /><span className='text-xs font-semibold'>How can I ensure my project's progress ?</span></AccordionTrigger>
+    <AccordionTrigger><IoMdAddCircleOutline  className='text-[#0577eb] text-xl font-bold mr-5'  /><span className='text-xs font-semibold'>How can I ensure my project&apos;s progress ?</span></AccordionTrigger>
     <AccordionContent>
-    StakNest has got you covered. Enjoy peace of mind as we proactively manage your project's progress, a benefit of partnering with a full-service development company.
+    StakNest has got you covered. Enjoy peace of mind as we proactively manage your project&apos;s progress, a benefit of partnering with a full-service development company.
     </AccordionContent>
   </AccordionItem>
 </Accordion>
@@ -68,7 +68,7 @@ We usually use Slack , Skype and Google Meet for  communication including voice/
   <AccordionItem value="item-1" className="w-full">
     <AccordionTrigger><IoMdAddCircleOutline  className='text-[#0577eb] text-xl font-bold mr-5'  /><span className='text-xs font-semibold'>What engagement models does StakNest provide?</span></AccordionTrigger>
     <AccordionContent>
-    Choose from our flexible engagement models including part-time or full-time dedicated developers, or explore custom solutions tailored to your project's needs.
+    Choose from our flexible engagement models including part-time or full-time dedicated developers, or explore custom solutions tailored to your project&apos;s needs.
     </AccordionContent>
   </AccordionItem>
 </Accordion>

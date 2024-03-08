@@ -12,7 +12,10 @@ export default function HeroSection() {
                 Zero Risk, All Reward: Start Your 7 Day Free Trail Today!
             </div>
             <div className=' mt-12 font-regular '>
-            <button className='text-sm mb-2  mr-2 py-2 px-6 bg-blue-700 rounded-sm text-white'>Book a Discovery Workshop Call</button>
+              <a href='#Candy'>
+                  <button className='text-sm mb-2  mr-2 py-2 px-6 bg-blue-700 rounded-sm text-white'>Book a Discovery Workshop Call</button>
+              </a>
+          
             </div>
           </div>
           <div className=''>
@@ -29,7 +32,10 @@ export default function HeroSection() {
              Hire Top 1% Pre-Vetted Developers in <span className='text-blue-700'>48 hours! </span>
             </div>
             <div className=' mt-12 font-regular font-medium flex justify-center items-center'>
-            <button className='text-sm mb-2  mr-2 py-2 px-6 bg-blue-700 rounded-sm text-white'>Book a Discovery Workshop Call</button>
+              <a href='#Candy'>
+                <button className='text-sm mb-2  mr-2 py-2 px-6 bg-blue-700 rounded-sm text-white'>Book a Discovery Workshop Call</button> 
+              </a>
+           
             </div>
             <div className=' flex md:hidden justify-center items-center font-regular mt-10 '>Join the Ranks of Remote First Companies</div>
         </div>

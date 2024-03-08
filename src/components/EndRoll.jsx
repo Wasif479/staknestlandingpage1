@@ -14,7 +14,7 @@ export default function EndRoll() {
         </div>
         <div className='flex md:hidden justify-center items-center mt-11'>
             {/* Mobile view */}
-          <Carousel showArrows={true}>
+          <Carousel showArrows={false} showIndicators={false} showStatus={false} autoPlay={true} infiniteLoop={true} className='w-4/5'>
              <div className=''>
                 <Image src={'/2.png'} alt='' width={400} height={40} quality={100}/>
              </div>
